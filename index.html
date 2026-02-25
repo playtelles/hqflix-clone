@@ -14,6 +14,11 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
+    <!-- Preload LCP Images (Above the fold) -->
+    <link rel="preload" as="image" href="https://i.imgur.com/5vu1fG2.jpeg">
+    <link rel="preload" as="image" href="https://i.imgur.com/uuN1s6P.png">
+    <link rel="preload" as="image" href="https://i.imgur.com/DcZ46R2.png">
+
     <!-- UTMify Script -->
     <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck
         data-utmify-prevent-subids async defer></script>
@@ -46,7 +51,7 @@
     <header class="header">
         <div class="container header-inner">
             <a href="#" class="logo">
-                <img src="https://i.imgur.com/uuN1s6P.png" alt="HQFlix Logo">
+                <img src="https://i.imgur.com/uuN1s6P.png" alt="HQFlix Logo" fetchpriority="high">
             </a>
             <nav class="nav">
                 <a href="#beneficios">Benefícios</a>
@@ -90,7 +95,7 @@
                         <p class="hero-subtitle">EM UM SÓ LUGAR!</p>
 
                         <img src="https://i.imgur.com/DcZ46R2.png" alt="HQFlix App em múltiplos dispositivos"
-                            class="hero-img-centered">
+                            class="hero-img-centered" fetchpriority="high">
 
                         <p class="hero-update-text">Atualização TODOS OS DIAS!</p>
 
@@ -218,7 +223,8 @@
             <div class="benefits-grid">
                 <!-- Atualizações -->
                 <div class="benefit-card text-center">
-                    <img src="https://i.imgur.com/HPcQXVy.jpeg" alt="Atualizações" class="benefit-icon-lg">
+                    <img src="https://i.imgur.com/HPcQXVy.jpeg" alt="Atualizações" class="benefit-icon-lg"
+                        loading="lazy">
                     <h3 class="benefit-title">Recebe Atualização Diária</h3>
                     <p class="benefit-desc">Acervo atualizado rigorosamente todos os dias! O catálogo nunca fica
                         desatualizado.</p>
@@ -226,7 +232,7 @@
 
                 <!-- Idioma -->
                 <div class="benefit-card text-center">
-                    <img src="https://i.imgur.com/HviwHZQ.png" alt="Idioma" class="benefit-icon-lg">
+                    <img src="https://i.imgur.com/HviwHZQ.png" alt="Idioma" class="benefit-icon-lg" loading="lazy">
                     <h3 class="benefit-title">Tudo em Português</h3>
                     <p class="benefit-desc">Todo o conteúdo é 100% no nosso idioma (PT-BR), perfeito para quem preza por
                         qualidade.</p>
@@ -245,17 +251,19 @@
 
             <div class="bonus-grid">
                 <div class="bonus-card text-center">
-                    <img src="https://i.imgur.com/I94p28v.png" alt="Pacote +18 Exclusivo" class="bonus-img">
+                    <img src="https://i.imgur.com/I94p28v.png" alt="Pacote +18 Exclusivo" class="bonus-img"
+                        loading="lazy">
                     <h4 class="bonus-title">Pacote +18 Exclusivo</h4>
                     <p>Milhares de títulos focados no público adulto sem censura.</p>
                 </div>
                 <div class="bonus-card text-center">
-                    <img src="https://i.imgur.com/5O0z9zt.png" alt="Acervo de Terror" class="bonus-img">
+                    <img src="https://i.imgur.com/5O0z9zt.png" alt="Acervo de Terror" class="bonus-img" loading="lazy">
                     <h4 class="bonus-title">Acervo de Terror</h4>
                     <p>A melhor e mais assustadora coleção de HQs de terror já feita.</p>
                 </div>
                 <div class="bonus-card text-center">
-                    <img src="https://i.imgur.com/WHQf7BB.png" alt="Audiobooks e E-books" class="bonus-img">
+                    <img src="https://i.imgur.com/WHQf7BB.png" alt="Audiobooks e E-books" class="bonus-img"
+                        loading="lazy">
                     <h4 class="bonus-title">Audiobooks e E-books</h4>
                     <p>Acesso premium a mais de 20.000 livros em áudio e texto e cursos.</p>
                 </div>
@@ -269,7 +277,7 @@
             <h2 class="section-heading"><span class="highlight-gold">Quem usa, recomenda!</span></h2>
 
             <div class="rating-box mb-md">
-                <img src="https://i.imgur.com/mRqFr8Y.png" alt="5 Estrelas" class="rating-img">
+                <img src="https://i.imgur.com/mRqFr8Y.png" alt="5 Estrelas" class="rating-img" loading="lazy">
                 <div class="stars-text mt-sm">⭐⭐⭐⭐⭐</div>
                 <p class="rating-desc mt-xs mb-xs">veja o que nossos clientes estão dizendo sobre a experiência HQFlix
                 </p>
@@ -418,7 +426,7 @@
 
             <div class="guarantee-content-box text-center mt-md">
                 <img src="https://i.imgur.com/L6h2Odf.png" alt="Garantia Incondicional de 7 Dias"
-                    class="guarantee-image">
+                    class="guarantee-image" loading="lazy">
                 <p class="guarantee-risk-free mt-sm">
                     Você pode experimentar sem riscos! Se não gostar, devolvemos seu dinheiro. Sua compra é segura e
                     imediata. Não há cobranças mensais ou anuais.
@@ -472,7 +480,7 @@
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container text-center">
-            <img src="https://i.imgur.com/ijw0EGc.png" alt="HQFlix Logo" class="footer-logo">
+            <img src="https://i.imgur.com/ijw0EGc.png" alt="HQFlix Logo" class="footer-logo" loading="lazy">
             <p class="footer-disclaimer">O HQFlix não é afiliado a nenhuma editora, todas as marcas e personagens
                 mencionados pertencem aos seus respectivos proprietários, se gostar de qualquer quadrinho, compre o
                 original.</p>
