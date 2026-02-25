@@ -571,6 +571,7 @@ ul {
     display: flex;
     gap: 10px;
     padding-left: 10px;
+    will-change: transform;
 }
 
 .track-left {
@@ -584,6 +585,7 @@ ul {
 
 .publisher-card {
     min-width: 150px;
+    width: 150px;
     height: 230px;
     background: transparent;
     border: 1px solid var(--border-color);
@@ -611,6 +613,14 @@ ul {
 
 .publisher-card:hover img {
     transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+    .publisher-card {
+        min-width: 120px;
+        width: 120px;
+        height: 180px;
+    }
 }
 
 @keyframes marqueeLeft {
@@ -665,6 +675,7 @@ ul {
 
 .review-card {
     min-width: 250px;
+    width: 250px;
     height: 480px;
     border-radius: 12px;
     overflow: hidden;
@@ -683,6 +694,7 @@ ul {
 @media (max-width: 600px) {
     .review-card {
         min-width: 200px;
+        width: 200px;
         height: 380px;
     }
 }
