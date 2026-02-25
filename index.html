@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="HQFlix Brasil - O maior acervo de HQs e Mangás em português com acesso vitalício.">
+    <title>HQFlix Brasil | +100.000 HQs e Mangás</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- UTMify Script -->
+    <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck
+        data-utmify-prevent-subids async defer></script>
+
+    <!-- UTMify Pixel -->
+    <script>
+        window.pixelId = "6840e467a0535421595a09f1";
+        var a = document.createElement("script");
+        a.setAttribute("async", "");
+        a.setAttribute("defer", "");
+        a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+        document.head.appendChild(a);
+    </script>
+</head>
+
+<body>
+
+    <!-- NOTIFICATION BAR (Scarcity) -->
+    <div class="notification-bar">
+        <div class="container scarcity-top">
+            <span class="scarcity-icon">🔥</span>
+            <span class="scarcity-text">Oferta especial termina HOJE:</span>
+            <span class="countdown" id="countdown">
+                <span id="countdown-date">25/02/2026</span> até as 23:59
+            </span>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <img src="https://i.imgur.com/uuN1s6P.png" alt="HQFlix Logo">
+            </a>
+            <nav class="nav">
+                <a href="#beneficios">Benefícios</a>
+                <a href="#pacotes">Pacotes</a>
+                <a href="#faq">FAQ</a>
+                <a href="#opinioes">Opiniões</a>
+                <a href="https://www.instagram.com/hqflixbrasil/" target="_blank">Suporte</a>
+            </nav>
+            <a href="#pacotes" class="btn btn-primary cta-sm pulse">COMPRAR AGORA</a>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Abrir menu">☰</button>
+        </div>
+    </header>
+
+    <!-- MOBILE MENU OVERLAY -->
+    <div class="mobile-menu-overlay" id="mobile-menu">
+        <nav class="mobile-nav">
+            <a href="#como-funciona" class="mobile-link">Como Funciona</a>
+            <a href="#beneficios" class="mobile-link">Benefícios</a>
+            <a href="#opinioes" class="mobile-link">Opiniões</a>
+            <a href="https://www.instagram.com/hqflixbrasil/" target="_blank" class="mobile-link">Suporte</a>
+            <a href="#pacotes" class="btn btn-primary pulse mt-sm mobile-link">COMPRAR AGORA</a>
+        </nav>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero"
+        style="background-image: linear-gradient(rgba(11, 14, 20, 0.8), rgba(11, 14, 20, 0.9)), url('https://i.imgur.com/5vu1fG2.jpeg'); background-size: cover; background-position: center;">
+        <div class="hero-bg-glow"></div>
+        <div class="container hero-container">
+
+            <div class="hero-card-wrapper">
+                <div class="hero-card"
+                    style="background-image: linear-gradient(rgba(11, 14, 20, 0.75), rgba(11, 14, 20, 0.9)), url('https://i.imgur.com/5vu1fG2.jpeg');">
+                    <div class="hero-card-content">
+                        <div class="guarantee-badge-top">✅ 7 Dias de garantia</div>
+
+                        <h1 class="hero-title">
+                            + DE 100.000<br>
+                            <span class="highlight-title">HQs e Mangás</span>
+                        </h1>
+                        <p class="hero-subtitle">EM UM SÓ LUGAR!</p>
+
+                        <img src="https://i.imgur.com/DcZ46R2.png" alt="HQFlix App em múltiplos dispositivos"
+                            class="hero-img-centered">
+
+                        <p class="hero-update-text">Atualização TODOS OS DIAS!</p>
+
+                        <div class="hero-badge-green">
+                            💰 SEM MENSALIDADE, PAGAMENTO ÚNICO!
+                        </div>
+
+                        <div class="hero-social-proof">
+                            <span class="stars">★★★★★</span>
+                            <span class="proof-text"><strong>4.9/5.0</strong> de 5.578 usuários</span>
+                        </div>
+
+                        <div class="hero-actions-stacked mt-md">
+                            <a href="#pacotes" class="btn btn-gold btn-xl pulse">RECEBER AGORA</a>
+                            <a href="#como-funciona" class="btn btn-outline-dark btn-xl">SAIBA MAIS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PUBLISHERS CAROUSEL -->
+    <section class="publishers-section">
+        <div class="container text-center">
+            <h2 class="section-heading mb-xs">O Mais <span class="highlight-gold">Completo do Brasil</span></h2>
+            <p class="section-subheading mb-md">São + de 100 mil hqs e mangás atualizadas diariamente para ler quando e
+                onde quiser</p>
+        </div>
+
+        <div class="marquee-wrapper">
+            <!-- Row 1: Right to left (HQs) -->
+            <div class="marquee-track track-left">
+                <div class="publisher-card"><img src="https://i.imgur.com/0x33YhW.jpeg" alt="HQ"></div>
+                <div class="publisher-card"><img src="https://i.imgur.com/VpBgznG.jpeg" alt="HQ"></div>
+                <div class="publisher-card"><img src="https://i.imgur.com/5j01ylm.jpeg" alt="HQ"></div>
+                <div class="publisher-card"><img src="https://i.imgur.com/Wtmq4JS.jpeg" alt="HQ"></div>
+                <div class="publisher-card"><img src="https://i.imgur.com/Mf0eaP1.jpeg" alt="HQ"></div>
+                <div class="publisher-card"><img src="https://i.imgur.com/62qfoh8.jpeg" alt="HQ"></div>
+                <div class="publisher-card"><img src="https://i.imgur.com/7m4OhsQ.jpeg" alt="HQ"></div>
+                <div class="publisher-card"><img src="https://i.imgur.com/vFYDdPg.jpeg" alt="HQ"></div>
+                <!-- Duplicate for seamless loop -->
+                <div class="publisher-card"><img src="https://i.imgur.com/0x33YhW.jpeg" alt="HQ"></div>
+                <div class="publisher-card"><img src="https://i.imgur.com/VpBgznG.jpeg" alt="HQ"></div>
+                <div class="publisher-card"><img src="https://i.imgur.com/5j01ylm.jpeg" alt="HQ"></div>
+                <div class="publisher-card"><img src="https://i.imgur.com/Wtmq4JS.jpeg" alt="HQ"></div>
+                <div class="publisher-card"><img src="https://i.imgur.com/Mf0eaP1.jpeg" alt="HQ"></div>
+                <div class="publisher-card"><img src="https://i.imgur.com/62qfoh8.jpeg" alt="HQ"></div>
+                <div class="publisher-card"><img src="https://i.imgur.com/7m4OhsQ.jpeg" alt="HQ"></div>
+                <div class="publisher-card"><img src="https://i.imgur.com/vFYDdPg.jpeg" alt="HQ"></div>
+            </div>
+        </div>
+
+        <div class="marquee-wrapper mt-sm">
+            <!-- Row 2: Left to right (Mangas) -->
+            <div class="marquee-track track-right">
+                <div class="publisher-card"><img src="https://i.imgur.com/PcK5vXn.jpeg" alt="Manga"></div>
+                <div class="publisher-card"><img src="https://i.imgur.com/ezeWj7l.jpeg" alt="Manga"></div>
+                <div class="publisher-card"><img src="https://i.imgur.com/HWXAQUM.jpeg" alt="Manga"></div>
+                <div class="publisher-card"><img src="https://i.imgur.com/ARxNmB9.jpeg" alt="Manga"></div>
+                <div class="publisher-card"><img src="https://i.imgur.com/oAvrrQW.jpeg" alt="Manga"></div>
+                <div class="publisher-card"><img src="https://i.imgur.com/9co9XLp.jpeg" alt="Manga"></div>
+                <div class="publisher-card"><img src="https://i.imgur.com/RQxjHl8.jpeg" alt="Manga"></div>
+                <div class="publisher-card"><img src="https://i.imgur.com/TUHhId7.jpeg" alt="Manga"></div>
+                <!-- Duplicate for seamless loop -->
+                <div class="publisher-card"><img src="https://i.imgur.com/PcK5vXn.jpeg" alt="Manga"></div>
+                <div class="publisher-card"><img src="https://i.imgur.com/ezeWj7l.jpeg" alt="Manga"></div>
+                <div class="publisher-card"><img src="https://i.imgur.com/HWXAQUM.jpeg" alt="Manga"></div>
+                <div class="publisher-card"><img src="https://i.imgur.com/ARxNmB9.jpeg" alt="Manga"></div>
+                <div class="publisher-card"><img src="https://i.imgur.com/oAvrrQW.jpeg" alt="Manga"></div>
+                <div class="publisher-card"><img src="https://i.imgur.com/9co9XLp.jpeg" alt="Manga"></div>
+                <div class="publisher-card"><img src="https://i.imgur.com/RQxjHl8.jpeg" alt="Manga"></div>
+                <div class="publisher-card"><img src="https://i.imgur.com/TUHhId7.jpeg" alt="Manga"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMO FUNCIONA (VIDEO) -->
+    <section id="como-funciona" class="how-it-works">
+        <div class="container">
+            <h2 class="section-heading">
+                Veja o HQFlix funcionando na <span class="highlight-gold">Prática!</span>
+            </h2>
+            <p class="section-subheading">A plataforma mais simples, rápida e organizada do Brasil.</p>
+
+            <div class="video-wrapper">
+                <div style="padding:181.94% 0 0 0;position:relative;"><iframe
+                        src="https://player.vimeo.com/video/1155296805?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Na Prática"></iframe>
+                </div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+
+            <div class="text-center mt-md">
+                <a href="#pacotes" class="btn btn-primary btn-lg pulse">QUERO TER ESSE ACESSO</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section id="beneficios" class="benefits">
+        <div class="container">
+            <h2 class="section-heading">Com o <span class="highlight-gold">HQFlix</span> você:</h2>
+
+            <div class="benefits-grid">
+                <!-- Atualizações -->
+                <div class="benefit-card text-center">
+                    <img src="https://i.imgur.com/HPcQXVy.jpeg" alt="Atualizações" class="benefit-icon-lg">
+                    <h3 class="benefit-title">Recebe Atualização Diária</h3>
+                    <p class="benefit-desc">Acervo atualizado rigorosamente todos os dias! O catálogo nunca fica
+                        desatualizado.</p>
+                </div>
+
+                <!-- Idioma -->
+                <div class="benefit-card text-center">
+                    <img src="https://i.imgur.com/HviwHZQ.png" alt="Idioma" class="benefit-icon-lg">
+                    <h3 class="benefit-title">Tudo em Português</h3>
+                    <p class="benefit-desc">Todo o conteúdo é 100% no nosso idioma (PT-BR), perfeito para quem preza por
+                        qualidade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- BONUSES -->
+    <section class="bonuses">
+        <div class="container">
+            <h2 class="section-heading">e NÃO para por aí... <span class="highlight-gold">Você vai RECEBER
+                    TAMBÉM!</span></h2>
+
+            <div class="bonus-grid">
+                <div class="bonus-card text-center">
+                    <img src="https://i.imgur.com/I94p28v.png" alt="Pacote +18 Exclusivo" class="bonus-img">
+                    <h4 class="bonus-title">Pacote +18 Exclusivo</h4>
+                    <p>Milhares de títulos focados no público adulto sem censura.</p>
+                </div>
+                <div class="bonus-card text-center">
+                    <img src="https://i.imgur.com/5O0z9zt.png" alt="Acervo de Terror" class="bonus-img">
+                    <h4 class="bonus-title">Acervo de Terror</h4>
+                    <p>A melhor e mais assustadora coleção de HQs de terror já feita.</p>
+                </div>
+                <div class="bonus-card text-center">
+                    <img src="https://i.imgur.com/WHQf7BB.png" alt="Audiobooks e E-books" class="bonus-img">
+                    <h4 class="bonus-title">Audiobooks e E-books</h4>
+                    <p>Acesso premium a mais de 20.000 livros em áudio e texto e cursos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="opinioes" class="testimonials">
+        <div class="container text-center">
+            <h2 class="section-heading"><span class="highlight-gold">Quem usa, recomenda!</span></h2>
+
+            <div class="rating-box mb-md">
+                <img src="https://i.imgur.com/mRqFr8Y.png" alt="5 Estrelas" class="rating-img">
+                <div class="stars-text mt-sm">⭐⭐⭐⭐⭐</div>
+                <p class="rating-desc mt-xs mb-xs">veja o que nossos clientes estão dizendo sobre a experiência HQFlix
+                </p>
+                <div class="hero-social-proof">
+                    <span class="proof-text"><strong>4.9/5.0</strong> de 10.578 usuários.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="marquee-wrapper mt-md">
+            <!-- Row 1: Right to left -->
+            <div class="marquee-track track-left">
+                <div class="review-card"><img src="https://i.imgur.com/3OclDng.jpeg" alt="Review"></div>
+                <div class="review-card"><img src="https://i.imgur.com/AEqhjEn.jpeg" alt="Review"></div>
+                <div class="review-card"><img src="https://i.imgur.com/vREnhSS.jpeg" alt="Review"></div>
+                <div class="review-card"><img src="https://i.imgur.com/NVfA4tg.jpeg" alt="Review"></div>
+                <div class="review-card"><img src="https://i.imgur.com/JYowenf.jpeg" alt="Review"></div>
+                <div class="review-card"><img src="https://i.imgur.com/dVRY1bJ.jpeg" alt="Review"></div>
+                <div class="review-card"><img src="https://i.imgur.com/QHRzVYI.jpeg" alt="Review"></div>
+                <div class="review-card"><img src="https://i.imgur.com/OUKUhLD.jpeg" alt="Review"></div>
+                <div class="review-card"><img src="https://i.imgur.com/7hX75IY.jpeg" alt="Review"></div>
+                <div class="review-card"><img src="https://i.imgur.com/vS2WsLn.jpeg" alt="Review"></div>
+                <div class="review-card"><img src="https://i.imgur.com/AEqhjEn.jpeg" alt="Review"></div>
+                <div class="review-card"><img src="https://i.imgur.com/vS2WsLn.jpeg" alt="Review"></div>
+                <div class="review-card"><img src="https://i.imgur.com/F1c1qZu.jpeg" alt="Review"></div>
+
+                <!-- Duplicate for seamless loop -->
+                <div class="review-card"><img src="https://i.imgur.com/3OclDng.jpeg" alt="Review"></div>
+                <div class="review-card"><img src="https://i.imgur.com/AEqhjEn.jpeg" alt="Review"></div>
+                <div class="review-card"><img src="https://i.imgur.com/vREnhSS.jpeg" alt="Review"></div>
+                <div class="review-card"><img src="https://i.imgur.com/NVfA4tg.jpeg" alt="Review"></div>
+                <div class="review-card"><img src="https://i.imgur.com/JYowenf.jpeg" alt="Review"></div>
+                <div class="review-card"><img src="https://i.imgur.com/dVRY1bJ.jpeg" alt="Review"></div>
+                <div class="review-card"><img src="https://i.imgur.com/QHRzVYI.jpeg" alt="Review"></div>
+                <div class="review-card"><img src="https://i.imgur.com/OUKUhLD.jpeg" alt="Review"></div>
+                <div class="review-card"><img src="https://i.imgur.com/7hX75IY.jpeg" alt="Review"></div>
+                <div class="review-card"><img src="https://i.imgur.com/vS2WsLn.jpeg" alt="Review"></div>
+                <div class="review-card"><img src="https://i.imgur.com/AEqhjEn.jpeg" alt="Review"></div>
+                <div class="review-card"><img src="https://i.imgur.com/vS2WsLn.jpeg" alt="Review"></div>
+                <div class="review-card"><img src="https://i.imgur.com/F1c1qZu.jpeg" alt="Review"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pacotes" class="pricing">
+        <div class="container">
+            <h2 class="section-heading">Qual pacote <span class="highlight-gold">combina com você?</span></h2>
+
+            <div class="pricing-grid">
+                <!-- Basic Package -->
+                <div class="pricing-card basic">
+                    <div class="pricing-header">
+                        <h3>Pacote Básico</h3>
+                        <p class="pricing-desc">Para quem quer apenas o essencial.</p>
+                        <div class="price">R$ 14,90</div>
+                        <div class="pricing-guarantee">✅ 7 Dias de Garantia</div>
+                    </div>
+                    <div class="pricing-body">
+                        <ul class="feature-list">
+                            <li><svg viewBox="0 0 24 24">
+                                    <path fill="#00C853" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                                </svg> Garantia 7 Dias</li>
+                            <li><svg viewBox="0 0 24 24">
+                                    <path fill="#00C853" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                                </svg> Cerca de 10.000 HQ's</li>
+                            <li><svg viewBox="0 0 24 24">
+                                    <path fill="#00C853" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                                </svg> Acesso Vitalício</li>
+                            <li><svg viewBox="0 0 24 24">
+                                    <path fill="#00C853" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                                </svg> Acesso Imediato</li>
+                            <li class="disabled"><svg viewBox="0 0 24 24">
+                                    <path fill="#F44336"
+                                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                                </svg> Pacote +18 Exclusivo</li>
+                            <li class="disabled"><svg viewBox="0 0 24 24">
+                                    <path fill="#F44336"
+                                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                                </svg> Bônus Extra (Audiobooks)</li>
+                            <li class="disabled"><svg viewBox="0 0 24 24">
+                                    <path fill="#F44336"
+                                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                                </svg> Atualizações Diárias</li>
+                            <li class="disabled"><svg viewBox="0 0 24 24">
+                                    <path fill="#F44336"
+                                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                                </svg> Raridades / Edições Especiais</li>
+                            <li class="disabled"><svg viewBox="0 0 24 24">
+                                    <path fill="#F44336"
+                                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                                </svg> Servidor Google Drive Próprio</li>
+                        </ul>
+                        <a href="oferta.html" class="btn btn-outline-primary btn-block">COMPRAR BÁSICO</a>
+                        <div class="basic-offer-arrow mt-sm">⬇️ Temos uma oferta especial abaixo para você</div>
+                    </div>
+                </div>
+
+                <!-- Complete Package (Gold/Attractive) -->
+                <div class="pricing-card complete">
+                    <div class="best-seller-ribbon">+ VENDIDO</div>
+                    <div class="pricing-header">
+                        <div class="stars-text mb-xs">⭐⭐⭐⭐⭐</div>
+                        <h3>Pacote Completo</h3>
+                        <p class="pricing-desc">A experiência definitiva em Quadrinhos e Mangás.</p>
+                        <div class="price green-text">R$ 29,90</div>
+                        <div class="pricing-guarantee">✅ 7 Dias de Garantia</div>
+                    </div>
+                    <div class="pricing-body">
+                        <ul class="feature-list active-all">
+                            <li><svg viewBox="0 0 24 24">
+                                    <path fill="#00E676" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                                </svg> <strong>Garantia 7 Dias</strong></li>
+                            <li><svg viewBox="0 0 24 24">
+                                    <path fill="#00E676" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                                </svg> <strong>Mais de 100.000 títulos</strong></li>
+                            <li><svg viewBox="0 0 24 24">
+                                    <path fill="#00E676" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                                </svg> <strong>Acesso Vitalício</strong></li>
+                            <li><svg viewBox="0 0 24 24">
+                                    <path fill="#00E676" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                                </svg> <strong>Acesso Imediato</strong></li>
+                            <li><svg viewBox="0 0 24 24">
+                                    <path fill="#00E676" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                                </svg> <strong>Pacote +18 Exclusivo</strong></li>
+                            <li><svg viewBox="0 0 24 24">
+                                    <path fill="#00E676" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                                </svg> <strong>Os 4 Bônus Extras Inclusos</strong></li>
+                            <li><svg viewBox="0 0 24 24">
+                                    <path fill="#00E676" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                                </svg> <strong>Atualizações Diárias</strong></li>
+                            <li><svg viewBox="0 0 24 24">
+                                    <path fill="#00E676" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                                </svg> <strong>Raridades / Edições Especiais</strong></li>
+                            <li><svg viewBox="0 0 24 24">
+                                    <path fill="#00E676" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                                </svg> <strong>Drive Próprio Super Rápido</strong></li>
+                        </ul>
+                        <a href="https://loja.hqflixbrasil.com/checkout/v3/scjPd3Z2kfwCRQJdgoO7"
+                            class="btn btn-gold btn-block btn-lg pulse"
+                            style="margin-top:20px; text-transform:uppercase;">COMPRAR AGORA</a>
+                        <div class="secure-payment mt-sm">🔒 Pagamento seguro</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guarantee-content-box text-center mt-md">
+                <img src="https://i.imgur.com/L6h2Odf.png" alt="Garantia Incondicional de 7 Dias"
+                    class="guarantee-image">
+                <p class="guarantee-risk-free mt-sm">
+                    Você pode experimentar sem riscos! Se não gostar, devolvemos seu dinheiro. Sua compra é segura e
+                    imediata. Não há cobranças mensais ou anuais.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2 class="section-heading">Perguntas <span class="highlight-blue">Frequentes</span></h2>
+
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-question">Como terei acesso ao material? <span class="icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>Logo após a confirmação do pagamento, você receberá um e-mail com as instruções e o link
+                            exclusivo para acessar todo o conteúdo através do Google Drive e outros servidores próprios,
+                            garantindo alta velocidade de download e leitura online.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Posso ler pelo celular, tablet ou PC? <span
+                            class="icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>Sim! O nosso acervo foi modelado para funcionar em qualquer dispositivo. Você pode baixar
+                            aplicativos sugeridos por nós para organizar sua biblioteca ou ler diretamente pelo
+                            navegador em qualquer tela.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Preciso pagar mensalidade? <span class="icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>Não. Se você escolher nosso Pacote, fará apenas um **pagamento único** e o acesso ao acervo
+                            não expirará, caracterizando o formato VITALÍCIO.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Em qual idioma estão os mangás e histórias em quadrinhos? <span
+                            class="icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>Todo o nosso catálogo de HQs, Mangás e Bônus está em **Português do Brasil (PT-BR)**,
+                            cuidadosamente traduzido pelos melhores grupos e editoras oficiais.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container text-center">
+            <img src="https://i.imgur.com/ijw0EGc.png" alt="HQFlix Logo" class="footer-logo">
+            <p class="footer-disclaimer">O HQFlix não é afiliado a nenhuma editora, todas as marcas e personagens
+                mencionados pertencem aos seus respectivos proprietários, se gostar de qualquer quadrinho, compre o
+                original.</p>
+
+            <div class="footer-social-links mt-sm mb-sm">
+                <a href="http://facebook.com/hqlix" target="_blank" style="margin: 0 10px;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#6495ED">
+                        <path
+                            d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.36L15.91 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z" />
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/hqflixbrasil/" target="_blank" style="margin: 0 10px;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#6495ED">
+                        <path
+                            d="M7.8 2H16.2C19.4 2 22 4.6 22 7.8V16.2C22 19.4 19.4 22 16.2 22H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2ZM7.6 4C5.6 4 4 5.6 4 7.6V16.4C4 18.4 5.6 20 7.6 20H16.4C18.4 20 20 18.4 20 16.4V7.6C20 5.6 18.4 4 16.4 4H7.6ZM12 7.25C14.62 7.25 16.75 9.38 16.75 12C16.75 14.62 14.62 16.75 12 16.75C9.38 16.75 7.25 14.62 7.25 12C7.25 9.38 9.38 7.25 12 7.25ZM12 9C10.35 9 9 10.35 9 12C9 13.65 10.35 15 12 15C13.65 15 15 13.65 15 12C15 10.35 13.65 9 12 9ZM17.4 5.4C18.06 5.4 18.6 5.94 18.6 6.6C18.6 7.26 18.06 7.8 17.4 7.8C16.74 7.8 16.2 7.26 16.2 6.6C16.2 5.94 16.74 5.4 17.4 5.4Z" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="footer-links">
+                <a href="#">Termos de Uso</a>
+                <a href="#">Políticas de Privacidade</a>
+                <a href="#">Contato</a>
+            </div>
+            <p class="copyright">© 2026 HQFlix Brasil - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- FAKE NOTIFICATION POPUP -->
+    <div class="sales-popup" id="sales-popup">
+        <div class="popup-img">⚡</div>
+        <div class="popup-info">
+            <span class="buyer-name" id="buyer-name">João V.</span>
+            <span class="buyer-action">acabou de comprar o <strong>Pacote Completo</strong></span>
+            <span class="buyer-time">há 2 minutos</span>
+        </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
+</body>
+
+</html>
