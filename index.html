@@ -521,6 +521,17 @@
 
     <!-- SCRIPT -->
     <script src="script.js"></script>
+
+    <!-- BACK REDIRECT SCRIPT -->
+    <script>
+        (function () {
+            var url = "ultima-chance.html";
+            window.history.pushState("forward", null, "");
+            window.addEventListener("popstate", function () {
+                window.location.replace(url);
+            });
+        })();
+    </script>
 </body>
 
 </html>
