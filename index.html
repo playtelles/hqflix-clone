@@ -369,9 +369,9 @@
     </noscript>
 
     <!-- Preload LCP Images with high priority -->
-    <link rel="preload" as="image" href="https://i.imgur.com/5vu1fG2.jpeg" fetchpriority="high">
-    <link rel="preload" as="image" href="https://i.imgur.com/uuN1s6P.png" fetchpriority="high">
-    <link rel="preload" as="image" href="https://i.imgur.com/DcZ46R2.png" fetchpriority="high">
+    <link rel="preload" as="image" href="hero-bg.jpeg" fetchpriority="high">
+    <link rel="preload" as="image" href="logo.png" fetchpriority="high">
+    <link rel="preload" as="image" href="hero-mobile.png" fetchpriority="high">
 </head>
 
 <body>
@@ -391,8 +391,7 @@
     <header class="header">
         <div class="container header-inner">
             <a href="#" class="logo">
-                <img src="https://i.imgur.com/uuN1s6P.png" alt="HQFlix Logo" fetchpriority="high" width="133"
-                    height="40" decoding="async">
+                <img src="logo.png" alt="HQFlix Logo" fetchpriority="high" width="133" height="40" decoding="async">
             </a>
             <nav class="nav">
                 <a href="#beneficios">Benefícios</a>
@@ -418,9 +417,8 @@
     </div>
 
     <!-- HERO SECTION -->
-    <section class="hero" style="display: grid; padding: 0; overflow: hidden; background: none;">
-        <img src="https://i.imgur.com/5vu1fG2.jpeg" alt="HQFlix Background" fetchpriority="high" decoding="async"
-            width="1920" height="1080"
+    <section class="hero" style="display: grid; padding: 0; overflow: hidden; background: none; min-height: 100vh;">
+        <img src="hero-bg.jpeg" alt="HQFlix Background" fetchpriority="high" decoding="async" width="1920" height="1080"
             style="grid-area: 1 / 1; width: 100%; height: 100%; object-fit: cover; z-index: 0; min-height: 0;">
         <div
             style="grid-area: 1 / 1; width: 100%; height: 100%; background: linear-gradient(rgba(11, 14, 20, 0.8), rgba(11, 14, 20, 0.9)); z-index: 0;">
@@ -430,8 +428,8 @@
 
             <div class="hero-card-wrapper">
                 <div class="hero-card" style="background: none; display: grid; padding: 0; overflow: hidden;">
-                    <img src="https://i.imgur.com/5vu1fG2.jpeg" alt="Card Background" fetchpriority="high"
-                        decoding="async" width="1920" height="1080"
+                    <img src="hero-bg.jpeg" alt="Card Background" fetchpriority="high" decoding="async" width="1920"
+                        height="1080"
                         style="grid-area: 1 / 1; width: 100%; height: 100%; object-fit: cover; z-index: 0; min-height: 0;">
                     <div
                         style="grid-area: 1 / 1; width: 100%; height: 100%; background: linear-gradient(rgba(11, 14, 20, 0.75), rgba(11, 14, 20, 0.9)); z-index: 1;">
@@ -445,8 +443,8 @@
                         </h1>
                         <p class="hero-subtitle">EM UM SÓ LUGAR!</p>
 
-                        <img src="https://i.imgur.com/DcZ46R2.png" alt="HQFlix App em múltiplos dispositivos"
-                            class="hero-img-centered" fetchpriority="high" decoding="async" width="480" height="270">
+                        <img src="hero-mobile.png" alt="HQFlix App em múltiplos dispositivos" class="hero-img-centered"
+                            fetchpriority="high" decoding="async" width="480" height="270">
 
                         <p class="hero-update-text">Atualização TODOS OS DIAS!</p>
 

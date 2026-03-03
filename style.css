@@ -349,6 +349,7 @@ ul {
     padding: 0;
     overflow: hidden;
     background: #f8f9fa;
+    min-height: 100vh;
     /* Light background to make card pop as requested */
 }
 
