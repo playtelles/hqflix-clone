@@ -10,21 +10,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <!-- Async CSS Loading -->
+    <link rel="preload" as="style" href="./style.css" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="./style.css">
+    </noscript>
 
-    <!-- UTMify Script -->
+    <!-- Meta Pixel & UTMify (Immediate load to ensure PageView fires) -->
     <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck
-        data-utmify-prevent-subids async defer></script>
-
-    <!-- UTMify Pixel -->
+        data-utmify-prevent-subids async></script>
     <script>
         window.pixelId = "6840e467a0535421595a09f1";
-        var a = document.createElement("script");
-        a.setAttribute("async", "");
-        a.setAttribute("defer", "");
-        a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-        document.head.appendChild(a);
     </script>
+    <script src="https://cdn.utmify.com.br/scripts/pixel/pixel.js" async></script>
     <style>
         /* BASE RESTORES FOR INDEPENDENT RENDER */
         :root {
