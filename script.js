@@ -21,16 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Countdown Timer Logic
-    const countdownDateEl = document.getElementById('countdown-date');
-    const countdownTimeEl = document.getElementById('countdown-time');
-
-    // Use the desired date (today's date) to create scarcity
-    const now = new Date();
-    const todayStr = `${now.getDate().toString().padStart(2, '0')}/${(now.getMonth() + 1).toString().padStart(2, '0')}/${now.getFullYear()}`;
-    if (countdownDateEl) {
-        countdownDateEl.textContent = todayStr;
-    }
+    // Countdown Timer Logic (Removed to prevent CLS above the fold)
 
     // Mobile Menu Logic
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');

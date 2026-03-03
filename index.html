@@ -148,8 +148,8 @@
         }
 
         .hero {
-            position: relative;
-            padding: 1rem 0 3rem;
+            display: grid;
+            padding: 0;
             overflow: hidden;
             background: #f8f9fa;
         }
@@ -161,6 +161,7 @@
             flex-direction: column;
             align-items: center;
             gap: 2rem;
+            padding: 1rem 20px 3rem;
         }
 
         .hero-card-wrapper {
@@ -177,10 +178,10 @@
             background-size: cover;
             background-position: center;
             border-radius: 16px;
-            position: relative;
+            display: grid;
             overflow: hidden;
             text-align: center;
-            padding: 1.5rem 1rem;
+            padding: 0;
             z-index: 1;
             min-height: 450px;
         }
@@ -188,6 +189,7 @@
         .hero-card-content {
             position: relative;
             z-index: 2;
+            padding: 1.5rem 1rem;
         }
 
         .guarantee-badge-top {
@@ -380,7 +382,7 @@
             <span class="scarcity-icon">🔥</span>
             <span class="scarcity-text">Oferta especial termina HOJE:</span>
             <span class="countdown" id="countdown">
-                <span id="countdown-date">25/02/2026</span> até as 23:59
+                <span id="countdown-date">HOJE</span> até as 23:59
             </span>
         </div>
     </div>
@@ -416,24 +418,25 @@
     </div>
 
     <!-- HERO SECTION -->
-    <section class="hero" style="position: relative; overflow: hidden; background: none;">
+    <section class="hero" style="display: grid; padding: 0; overflow: hidden; background: none;">
         <img src="https://i.imgur.com/5vu1fG2.jpeg" alt="HQFlix Background" fetchpriority="high" decoding="async"
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
+            width="1920" height="1080"
+            style="grid-area: 1 / 1; width: 100%; height: 100%; object-fit: cover; z-index: 0; min-height: 0;">
         <div
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(11, 14, 20, 0.8), rgba(11, 14, 20, 0.9)); z-index: 0;">
+            style="grid-area: 1 / 1; width: 100%; height: 100%; background: linear-gradient(rgba(11, 14, 20, 0.8), rgba(11, 14, 20, 0.9)); z-index: 0;">
         </div>
-        <div class="hero-bg-glow"></div>
-        <div class="container hero-container" style="position: relative; z-index: 1;">
+        <div class="hero-bg-glow" style="grid-area: 1 / 1; width: 100%; height: 100%;"></div>
+        <div class="container hero-container" style="grid-area: 1 / 1; z-index: 1; padding: 1rem 20px 3rem;">
 
             <div class="hero-card-wrapper">
-                <div class="hero-card" style="background: none; position: relative; overflow: hidden;">
+                <div class="hero-card" style="background: none; display: grid; padding: 0; overflow: hidden;">
                     <img src="https://i.imgur.com/5vu1fG2.jpeg" alt="Card Background" fetchpriority="high"
-                        decoding="async"
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
+                        decoding="async" width="1920" height="1080"
+                        style="grid-area: 1 / 1; width: 100%; height: 100%; object-fit: cover; z-index: 0; min-height: 0;">
                     <div
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(11, 14, 20, 0.75), rgba(11, 14, 20, 0.9)); z-index: 1;">
+                        style="grid-area: 1 / 1; width: 100%; height: 100%; background: linear-gradient(rgba(11, 14, 20, 0.75), rgba(11, 14, 20, 0.9)); z-index: 1;">
                     </div>
-                    <div class="hero-card-content" style="position: relative; z-index: 2;">
+                    <div class="hero-card-content" style="grid-area: 1 / 1; z-index: 2; padding: 1.5rem 1rem;">
                         <div class="guarantee-badge-top">✅ 7 Dias de garantia</div>
 
                         <h1 class="hero-title">

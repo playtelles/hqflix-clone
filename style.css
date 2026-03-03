@@ -345,16 +345,16 @@ ul {
 
 /* HERO SECTION (CARD LAYOUT) */
 .hero {
-    position: relative;
-    padding: 1rem 0 3rem;
+    display: grid;
+    padding: 0;
     overflow: hidden;
     background: #f8f9fa;
     /* Light background to make card pop as requested */
 }
 
 .hero {
-    position: relative;
-    padding: 1rem 0 3rem;
+    display: grid;
+    padding: 0;
     overflow: hidden;
     background: #f8f9fa;
     /* Light background to make card pop as requested */
@@ -372,6 +372,7 @@ ul {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    padding: 1rem 20px 3rem;
 }
 
 .hero-card-wrapper {
@@ -389,10 +390,10 @@ ul {
     background-size: cover;
     background-position: center;
     border-radius: 16px;
-    position: relative;
+    display: grid;
     overflow: hidden;
     text-align: center;
-    padding: 1.5rem 1rem;
+    padding: 0;
     z-index: 1;
 }
 
@@ -411,6 +412,7 @@ ul {
 .hero-card-content {
     position: relative;
     z-index: 2;
+    padding: 1.5rem 1rem;
 }
 
 .guarantee-badge-top {
