@@ -9,29 +9,18 @@
     <title>HQFlix Brasil | +100.000 HQs e Mangás</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800;900&display=swap"
-        rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://api6.ipify.org">
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800;900&display=swap"
+        onload="this.rel='stylesheet'">
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        onload="this.rel='stylesheet'">
     <link rel="stylesheet" href="style.css">
 
-    <!-- Preload LCP Images (Above the fold) -->
-    <link rel="preload" as="image" href="https://i.imgur.com/5vu1fG2.jpeg">
+    <!-- Preload LCP Image -->
+    <link rel="preload" as="image" href="https://i.imgur.com/5vu1fG2.jpeg" fetchpriority="high">
     <link rel="preload" as="image" href="https://i.imgur.com/uuN1s6P.png">
     <link rel="preload" as="image" href="https://i.imgur.com/DcZ46R2.png">
-
-    <!-- UTMify Script -->
-    <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck
-        data-utmify-prevent-subids async defer></script>
-
-    <!-- UTMify Pixel -->
-    <script>
-        window.pixelId = "6840e467a0535421595a09f1";
-        var a = document.createElement("script");
-        a.setAttribute("async", "");
-        a.setAttribute("defer", "");
-        a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-        document.head.appendChild(a);
-    </script>
 </head>
 
 <body>
@@ -77,15 +66,23 @@
     </div>
 
     <!-- HERO SECTION -->
-    <section class="hero"
-        style="background-image: linear-gradient(rgba(11, 14, 20, 0.8), rgba(11, 14, 20, 0.9)), url('https://i.imgur.com/5vu1fG2.jpeg'); background-size: cover; background-position: center;">
+    <section class="hero" style="position: relative; overflow: hidden; background: none;">
+        <img src="https://i.imgur.com/5vu1fG2.jpeg" alt="HQFlix Background" fetchpriority="high"
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
+        <div
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(11, 14, 20, 0.8), rgba(11, 14, 20, 0.9)); z-index: 0;">
+        </div>
         <div class="hero-bg-glow"></div>
-        <div class="container hero-container">
+        <div class="container hero-container" style="position: relative; z-index: 1;">
 
             <div class="hero-card-wrapper">
-                <div class="hero-card"
-                    style="background-image: linear-gradient(rgba(11, 14, 20, 0.75), rgba(11, 14, 20, 0.9)), url('https://i.imgur.com/5vu1fG2.jpeg');">
-                    <div class="hero-card-content">
+                <div class="hero-card" style="background: none; position: relative; overflow: hidden;">
+                    <img src="https://i.imgur.com/5vu1fG2.jpeg" alt="Card Background" fetchpriority="high"
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
+                    <div
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(11, 14, 20, 0.75), rgba(11, 14, 20, 0.9)); z-index: 1;">
+                    </div>
+                    <div class="hero-card-content" style="position: relative; z-index: 2;">
                         <div class="guarantee-badge-top">✅ 7 Dias de garantia</div>
 
                         <h1 class="hero-title">
@@ -198,16 +195,27 @@
             </h2>
             <p class="section-subheading">A plataforma mais simples, rápida e organizada do Brasil.</p>
 
-            <div class="video-wrapper">
-                <div style="padding:181.94% 0 0 0;position:relative;"><iframe
-                        src="https://player.vimeo.com/video/1155296805?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                        frameborder="0"
-                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Na Prática"></iframe>
+            <div class="video-wrapper" id="vimeo-wrapper">
+                <div id="vimeo-thumbnail" style="padding:181.94% 0 0 0;position:relative; cursor:pointer;"
+                    onclick="loadVimeoPlayer()">
+                    <img src="https://i.imgur.com/5vu1fG2.jpeg" alt="Video Thumbnail" loading="lazy"
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+                    <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);">
+                    </div>
+                    <div
+                        style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:var(--accent-gold);padding:20px 30px;border-radius:10px;color:#000;font-size:2rem;font-weight:bold;box-shadow: 0 4px 15px rgba(255, 215, 0, 0.5);">
+                        ▶ ASSISTIR</div>
                 </div>
-                <script src="https://player.vimeo.com/api/player.js"></script>
             </div>
+            <script>
+                function loadVimeoPlayer() {
+                    var wrapper = document.getElementById('vimeo-wrapper');
+                    wrapper.innerHTML = '<div style="padding:181.94% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1155296805?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Na Prática"></iframe></div>';
+                    var script = document.createElement("script");
+                    script.src = "https://player.vimeo.com/api/player.js";
+                    document.body.appendChild(script);
+                }
+            </script>
 
             <div class="text-center mt-md">
                 <a href="#pacotes" class="btn btn-primary btn-lg pulse">QUERO TER ESSE ACESSO</a>
@@ -531,6 +539,47 @@
                 window.location.replace(url);
             });
         })();
+    </script>
+    <!-- DELAYED SCRIPTS (UTMify, Pixel) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const loadScripts = () => {
+                // UTMify Script
+                const s1 = document.createElement('script');
+                s1.src = "https://cdn.utmify.com.br/scripts/utms/latest.js";
+                s1.setAttribute('data-utmify-prevent-xcod-sck', '');
+                s1.setAttribute('data-utmify-prevent-subids', '');
+                s1.async = true; s1.defer = true;
+                document.body.appendChild(s1);
+
+                // UTMify Pixel
+                window.pixelId = "6840e467a0535421595a09f1";
+                const s2 = document.createElement('script');
+                s2.src = "https://cdn.utmify.com.br/scripts/pixel/pixel.js";
+                s2.async = true; s2.defer = true;
+                document.body.appendChild(s2);
+
+                document.removeEventListener('scroll', loadScripts);
+                document.removeEventListener('click', loadScripts);
+                document.removeEventListener('mousemove', loadScripts);
+                document.removeEventListener('touchstart', loadScripts);
+            };
+
+            // Load on first interaction or after 3.5s
+            let scriptLoaded = false;
+            const triggerLoad = () => {
+                if (!scriptLoaded) {
+                    scriptLoaded = true;
+                    loadScripts();
+                }
+            };
+
+            setTimeout(triggerLoad, 3500);
+            document.addEventListener('scroll', triggerLoad);
+            document.addEventListener('click', triggerLoad);
+            document.addEventListener('mousemove', triggerLoad);
+            document.addEventListener('touchstart', triggerLoad);
+        });
     </script>
 </body>
 
