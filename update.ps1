@@ -18,9 +18,9 @@ foreach ($path in $paths) {
         
         # Replace URL specific to file
         if ($path -match 'oferta\.html') {
-            $content = $content -replace 'https://loja\.hqflixbrasil\.com/checkout/v4/[a-zA-Z0-9]+', 'https://loja.hqflixbrasil.com/checkout/v4/tJGcU8PWuhvthBSaVSUM'
+            $content = $content -replace 'https://loja\.hqflixbrasil\.com/checkout/v5/[a-zA-Z0-9]+', 'https://loja.hqflixbrasil.com/checkout/v5/tJGcU8PWuhvthBSaVSUM'
         } elseif ($path -match 'ultima-chance\.html') {
-            $content = $content -replace 'https://loja\.hqflixbrasil\.com/checkout/v4/[a-zA-Z0-9]+', 'https://loja.hqflixbrasil.com/checkout/v4/8tyB789qdesqFAygRaTK'
+            $content = $content -replace 'https://loja\.hqflixbrasil\.com/checkout/v5/[a-zA-Z0-9]+', 'https://loja.hqflixbrasil.com/checkout/v5/8tyB789qdesqFAygRaTK'
         }
         
         [System.IO.File]::WriteAllText($path, $content)
