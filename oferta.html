@@ -314,16 +314,19 @@
 
     <!-- BACK REDIRECT SCRIPT -->
     <script>
-        (function () {
-            var url = "https://hqflixbrasil.com/ultima-chance.html";
-            window.history.pushState({ page: 1 }, "", "");
-            window.history.pushState({ page: 2 }, "", "");
-            window.addEventListener("popstate", function (event) {
-                if (event.state && event.state.page === 1) {
-                    window.location.replace(url);
+        (function (window, location) {
+            history.replaceState(null, document.title, location.pathname + "#!/history");
+            history.pushState(null, document.title, location.pathname);
+
+            window.addEventListener("popstate", function () {
+                if (location.hash === "#!/history") {
+                    history.replaceState(null, document.title, location.pathname);
+                    setTimeout(function () {
+                        location.replace("./ultima-chance.html");
+                    }, 0);
                 }
-            });
-        })();
+            }, false);
+        }(window, location));
     </script>
 </body>
 
